@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Tablas</title>
+    <link rel="shortcut icon" href="Imagenes/icono.png" type="image/png">
+</head>
+<body>
+    <h1><span class="naranja">HTML</span> - Tablas.</h1>
+    <div class="center"><b>¿Qué es una tabla y para qué se utiliza en <span class="naranja">HTML</span>?</b></div>
+    <p>
+        Las tablas son una herramienta muy eficaz para presentar datos organizados, así como para establecer el diseño de texto y gráficos en una página <span class="naranja">HTML</span>. Una tabla se compone de una o varias filas, y a su vez está formada por una o más celdas.
+    </p>
+    <b>Uso de las etiquetas:</b> <code class="gris">&lt;<span class="verde">table</span>></code>, <code class="gris">&lt;<span class="verde">thead</span>></code>, <code class="gris">&lt;<span class="verde">th</span>></code>, <code class="gris">&lt;<span class="verde">tbody</span>></code>, <code class="gris">&lt;<span class="verde">tr</span>></code>, <code class="gris">&lt;<span class="verde">td</span>></code> y <code class="gris">&lt;<span class="verde">tfoot</span>></code>.
+    <p>
+        En este ejemplo utilizaremos la siguiente tabla como ejemplo:
+    </p>
+    <div class="center">
+        <img src="Imagenes/imagen1.png" alt="">
+    </div>
+    <p>
+        Para comenzar a crear esta tabla, primero debemos incluir la etiqueta raíz, denominada <code class="gris">table</code>. Dentro de la etiqueta <code class="gris">table</code>, agregaremos tres etiquetas: <code class="gris">thead</code>, <code class="gris">tbody</code> y <code class="gris">tfoot</code>.
+    </p>
+<pre><code class="cpp">1    &lt;<span class="verde">table</span>>
+2       &lt;<span class="verde">thead</span>>
+3
+4       &lt;/<span class="verde">thead</span>>
+5       &lt;<span class="verde">tbody</span>>
+6
+7       &lt;/<span class="verde">tbody</span>>
+8       &lt;<span class="verde">tfoot</span>>
+9
+10      &lt;/<span class="verde">tfoot</span>>
+11  &lt;/<span class="verde">table</span>></code></pre>
+    <p>
+        Comenzaremos trabajando con la etiqueta <code class="gris">thead</code>. Dentro de esta etiqueta, agregaremos 13 etiquetas <code class="gris">th</code>. La primera <code class="gris">th</code> quedará vacía, y en las siguientes escribiremos los nombres de los meses del año.
+    </p>
+<pre><code class="cpp">1    &lt;<span class="verde">table</span>>
+2       &lt;<span class="verde">thead</span>>
+3           &lt;<span class="verde">th</span>>   &lt;/<span class="verde">th</span>>
+5           &lt;<span class="verde">th</span>>Enero&lt;/<span class="verde">th</span>>
+6           &lt;<span class="verde">th</span>>Febrero&lt;/<span class="verde">th</span>>
+7           &lt;<span class="verde">th</span>>Marzo&lt;/<span class="verde">th</span>>
+8           &lt;<span class="verde">th</span>>Abril&lt;/<span class="verde">th</span>>
+9           &lt;<span class="verde">th</span>>Mayo&lt;/<span class="verde">th</span>>
+10          &lt;<span class="verde">th</span>>Junio&lt;/<span class="verde">th</span>>
+11          &lt;<span class="verde">th</span>>Julio&lt;/<span class="verde">th</span>>
+12          &lt;<span class="verde">th</span>>Agosto&lt;/<span class="verde">th</span>>
+13          &lt;<span class="verde">th</span>>Septiembre&lt;/<span class="verde">th</span>>
+14          &lt;<span class="verde">th</span>>Octubre&lt;/<span class="verde">th</span>>
+15          &lt;<span class="verde">th</span>>Noviembre&lt;/<span class="verde">th</span>>
+16          &lt;<span class="verde">th</span>>Diciembre&lt;/<span class="verde">th</span>>
+17       &lt;/<span class="verde">thead</span>>
+18       &lt;<span class="verde">tbody</span>>
+19
+20       &lt;/<span class="verde">tbody</span>>
+21       &lt;<span class="verde">tfoot</span>>
+22
+23      &lt;/<span class="verde">tfoot</span>>
+24  &lt;/<span class="verde">table</span>></code></pre>
+    <p>
+        <i>Documento <span class="naranja">HTML</span> Visualizado:</i>
+    </p>
+    <div class="center">
+        <img src="Imagenes/imagen2.png" alt="">
+    </div>
+    <p>
+        Como podemos observar, los elementos <span class="verde">th</span> se muestran con un estulo de letra en <b>negrita</b>. Continuemos con el resto de la tabla. Ahora trabajaremos en las filas del cuerpo de la tabla <span class="verde">tbody</span>. Las filas se crearán usando la etiqueta <span class="verde">tr</span>. En total, necesitamos 5 filas en el cuerpo de la tabla, es decir, 5 etiquetas <span class="verde">tr</span>.
+    </p>
+<pre><code class="cpp">17       &lt;/<span class="verde">thead</span>>
+18       &lt;<span class="verde">tbody</span>>
+19              &lt;<span class="verde">tr</span>>
+20
+21              &lt;/<span class="verde">tr</span>>
+22              &lt;<span class="verde">tr</span>>
+23
+24              &lt;/<span class="verde">tr</span>>
+25              &lt;<span class="verde">tr</span>>
+26
+27              &lt;/<span class="verde">tr</span>>
+28              &lt;<span class="verde">tr</span>>
+29
+30              &lt;/<span class="verde">tr</span>>
+31              &lt;<span class="verde">tr</span>>
+32
+33              &lt;/<span class="verde">tr</span>>
+34       &lt;/<span class="verde">tbody</span>>
+35       &lt;<span class="verde">tfoot</span>>
+36
+37      &lt;/<span class="verde">tfoot</span>>
+38  &lt;/<span class="verde">table</span>></code></pre>
+    <p>
+        Ahora, dentro de cada <span class="verde">tr</span>, agregaremos 13 etiquetas <span class="verde">td</span>.
+    </p>
+<pre><code class="cpp">         &lt;/<span class="verde">thead</span>>
+         &lt;<span class="verde">tbody</span>>
+                &lt;<span class="verde">tr</span>>
+                        &lt;<span class="verde">td</span>>&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>&lt;/<span class="verde">td</span>>
+                &lt;/<span class="verde">tr</span>></code></pre>
+    <p>
+        En el primer <span class="verde">td</span> de la primera fila <span class="verde">tr</span>, escribiremos <b>Gastos 1</b>. En el siguiente, pondremos el siguiente gasto, y así sucesivamente. Puedes utilizar la imagen asignada al principio para recordar los gastos de cada celda.
+    </p>
+<pre><code class="cpp">         &lt;/<span class="verde">thead</span>>
+         &lt;<span class="verde">tbody</span>>
+                &lt;<span class="verde">tr</span>>
+                        &lt;<span class="verde">td</span>>Gastos 1&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>$1500&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>$2000&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>$500&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>$600&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>$700&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>$3000&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>$500&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>$600&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>$5000&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>$50&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>$650&lt;/<span class="verde">td</span>>
+                        &lt;<span class="verde">td</span>>$700&lt;/<span class="verde">td</span>>
+                &lt;/<span class="verde">tr</span>></code></pre>
+    <p>
+        Ahora, en la primera celda de cada fila, es decir, en cada primer <span class="verde">td</span> de cada <span class="verde">tr</span> escribimos <b>Gastos 2</b>, <b>Gastos 3</b>, <b>Gastos 4</b> y <b>Gastos 5</b>. Veamos neustro documento a ver si podemos visualizar algún cambio.
+    </p>
+    <div class="center">
+        <img src="Imagenes/imagen3.png" alt="">
+    </div>
+    <p>
+        A continuación, tendremos una introducción a <span class="azul">CSS</span>, para poder hacer las líneas de nuestra tabla.
+    </p>
+    <br>
+    <hr>
+    <br>
+</body>
+</html>
